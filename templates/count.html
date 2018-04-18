@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gezählte Wörter</title>
+</head>
+<body>
+    <h1>In deinem Text sind {{ count }} Wörter</h1>
+    <a href="{% url 'home' %}">Zurück</a>
+
+    <h5>dein Text:</h5>
+    {{textfeld}}
+    <h6 color="red">Übrignes, "{{ most }}" ist das Wort, das am häufigsten in deinem Text vorkommt. Und zwar {{ hmost }} mal..</h6>
+    <h4>Wortzähler</h4>
+    {%for key, v in dict%}
+    {{key}}: {{v}}
+    <br/>
+
+    {%endfor%}
+</body>
+</html>

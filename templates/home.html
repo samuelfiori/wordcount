@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sam's Wortzähler</title>
+    </head>
+    <body>
+         <h1>Wortzähler</h1>
+         <form action="{% url 'count' %}">
+             <textarea rows="5" cols="40" name="Textfeld"></textarea>
+            <br/>
+            <input value="ZÄHL!" type="submit"/>
+         </form>
+        <a href="{%url 'kontakt'%}">
+            <button>Kontakt</button>
+        </a>
+    </body>
+</html>
